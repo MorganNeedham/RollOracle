@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 
 type Roll = {
   id: number;
@@ -14,6 +14,25 @@ type DiceProfile = {
 };
 
 function App() {
+  const [theme, setTheme] = useState<"dark" | "light">(() => {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "light" || savedTheme === "dark") {
+      return savedTheme;
+    }
+
+    return "dark";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  function toggleTheme() {
+    setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
+  }
+
   const [rollResult, setRollResult] = useState("");
 
   const [profileName, setProfileName] = useState("");
@@ -178,6 +197,10 @@ function App() {
 
   return (
     <main className="app">
+      <button className="theme-toggle" onClick={toggleTheme}>
+        {theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
+      </button>
+
       <section className="hero">
         <p className="eyebrow">Dice Analytics for Tabletop Players</p>
 
@@ -276,7 +299,7 @@ function App() {
           </form>
         </div>
 
-        <div className="card">
+        <div className="card stats-card">
           <h2>Roll Stats</h2>
 
           <div className="stats-grid">
