@@ -196,7 +196,7 @@ function App() {
       </section>
 
       <section className="dashboard">
-        <div className="card">
+        <div className="card profile-card">
           <h2>Create Dice Profile</h2>
 
           <form className="roll-form" onSubmit={handleCreateProfile}>
@@ -230,7 +230,7 @@ function App() {
           </form>
         </div>
 
-        <div className="card">
+        <div className="card roll-card">
           <h2>Add a Roll</h2>
 
           <form className="roll-form" onSubmit={handleSubmit}>
@@ -325,7 +325,7 @@ function App() {
           </div>
         </div>
 
-        <div className="card">
+        <div className="card recent-rolls-card">
           <h2>Recent Rolls</h2>
 
           {selectedDieRolls.length === 0 ? (
