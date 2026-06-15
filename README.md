@@ -4,6 +4,10 @@ Roll Oracle is a dice analytics web app for tabletop players who want to track r
 
 This project was built as a React/TypeScript capstone project and expanded into a portfolio app focused on state management, user input handling, simple statistics, and responsive UI design.
 
+## Screenshot
+
+![Roll Oracle app screenshot](screenshots/roll-oracle-mobile.jpg)
+
 ## Live Demo
 
 [View Roll Oracle on GitHub Pages](https://morganneedham.github.io/roll-oracle/)
