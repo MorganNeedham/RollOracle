@@ -6,7 +6,13 @@ This project was built as a React/TypeScript capstone project and expanded into 
 
 ## Screenshot
 
-![Roll Oracle app screenshot](screenshots/roll-oracle-mobile.jpg)
+<p align="center">
+  <img 
+    src="screenshots/roll-oracle-mobile.jpg" 
+    alt="Roll Oracle app screenshot" 
+    width="400"
+  />
+</p>
 
 ## Live Demo
 
