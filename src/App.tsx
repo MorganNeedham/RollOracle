@@ -276,7 +276,7 @@ const curseMeterText =
 
         <img
           className="hero-logo"
-          src={`${import.meta.env.BASE_URL}d20-logo.svg`}
+          src={`${import.meta.env.BASE_URL}d20-logo.png`}
           alt="Roll Oracle d20 logo"
         />
 
