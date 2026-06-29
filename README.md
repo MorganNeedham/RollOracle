@@ -39,6 +39,18 @@ This project was built as a React/TypeScript capstone project and expanded into 
 - GitHub Pages
 - GitHub Actions
 
+## AI Usage
+
+I used AI as a learning and development assistant while building Roll Oracle. AI helped me brainstorm project features, understand how to use React state, plan the roll history feature, improve the cursedness rating logic, troubleshoot GitHub Pages deployment, and refine my README/project description.
+
+Examples of AI-assisted ideas or code include:
+
+* Planning how dice profiles could work as tracked items.
+* Using React state to store roll history and selected dice profiles.
+* Creating validation logic so users cannot enter impossible roll values for a selected die type.
+* Designing the cursedness rating concept based on roll averages and roll history.
+* Improving the project description and resume-ready bullet points.
+
 ## Installation
 
 ```bash
